@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css.css">
+    <title>Sondaggio</title>
+  </head>
+  <body  class="body">
+    <div class="container">
+      <header class="header text_center">
+        <h1><strong>Benvenuti nell'area utente</strong></h1>
+        <h3>Compila i seguenti campi per poter completare l'iscrizione:</h3>
+      </header>
+      <main class="main">
+        <div class="main_content">
+          <label for="nome" class="label">
+            Nome
+            <input type="text" class="input" required></label>
+
+            <label for="Cognome" class="label">
+              Cognome
+              <input type="text" class="input" required></label>
+
+              <label for="Mail" class="label">
+                Mail
+                <input type="mail" class="input" required></label>
+
+                <label for="Eta" class="label">
+                  Età
+                  <input type="number" min="18" max="75" class="input_age" required></label>
+
+                    <br>
+
+                  <label for="Sesso" class="label_radio">
+                      <input type="radio" name="sesso" class="input-radio" required>Maschio
+                      </label>
+                  <label for="Sesso" class="label_radio">
+                      <input type="radio" name="sesso" class="input-radio" required> Femmina
+
+                      </label>
+
+                      <br>
+                      <br>
+
+
+                      <label for="" class="label">
+                        Inserisci password:
+                      <input type="password" id="pwd" class="input" required>
+      <input type="button" onclick="showPwd()" value="" class="pass" >
+                      </label>
+
+
+
+                    <label for="" class="label_check">
+                      <input type="checkbox" name="sesso" class="input-check" required>
+                      INFORMATIVA PRIVACY E TUTELA DEI DATI PERSONALI AI SENSI DEL D. LGS. 196/2003
+Do il Consenso e accetto le condizioni sul trattamento dei dati personali ordinari e sensibili
+secondo l'informativa di seguito riportata
+                    </label>
+
+                <br>
+                <br>
+
+                <label for="button" class="label-button">
+                  <button type="submit" name="" value="submit" class="button">Invia
+                </label>
+        </div>
+
+      </main>
+    </div>
+    <br>
+    <br>
+
+    <footer class="footer">
+      <div class="chisiamo">
+        <h4>Chi siamo</h4>
+        <ul>
+        <li><a href="">Il nostro personale</a></li>
+        <li><a href="">I nostri partner</a></li>
+        <li><a href="">Contatti</a></li>
+        </ul>
+
+      </div>
+
+      <div class="Servizi">
+        <h4>Servizi</h4>
+        <ul>
+        <li><a href="">Web hosting</a></li>
+        <li><a href="">Cloud hosting</a></li>
+        <li><a href="">Server dedicati</a></li>
+        </ul>
+
+      </div>
+
+      <div class="other">
+        <h4>Per iniziare</h4>
+        <ul>
+        <li><a href="">Tutorial</a></li>
+        <li><a href="">Risorse</a></li>
+        <li><a href="">Guida</a></li>
+        </ul>
+
+      </div>
+
+      <div class="help">
+        <h4>Aiuto</h4>
+        <ul>
+        <li><a href="">Domande frequenti</a></li>
+        <li><a href="">Metodi di pagamento</a></li>
+        <li><a href="">Tempi spedizione</a></li>
+        </ul>
+
+      </div>
+    </footer>
+
+  </body>
+
+
+
+  <script type="text/javascript">
+    function showPwd() {
+        var input = document.getElementById('pwd');
+        if (input.type === "password") {
+          input.type = "text";
+        } else {
+          input.type = "password";
+        }
+      }
+
+  </script>
+</html>
